@@ -21,32 +21,5 @@ public static class DatabaseInitializer
         {
             throw new ArgumentNullException(nameof(commandContext));
         }
-
-        // Verifica se a tabela CashFlow já contém registros
-        //if (commandContext.CashFlows.Any())
-        //{
-        //    return;
-        //}
-
-        //if (queryContext.CashFlows.Any())
-        //{
-        //    return;
-        //}
-
-        // Cria alguns registros fictícios
-        //const int numberOfCashFlow = 100;
-        //var cashFlow = new List<CashFlow>(numberOfCashFlow);
-
-        //for (int i = 1; i <= numberOfCashFlow; i++)
-        //{
-        //    cashFlow.Add(new CashFlow(i * 2, Domain.Enums.TransactionType.Debit, DateTime.Now));
-        //}
-
-        //// Adicione os registros fictícios ao banco de dados e salve as alterações
-        //commandContext.CashFlows.AddRange(cashFlow);
-        //commandContext.SaveChanges();
-
-        //queryContext.CashFlows.AddRange(cashFlow);
-        //queryContext.SaveChanges();
     }
 }

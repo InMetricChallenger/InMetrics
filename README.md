@@ -59,6 +59,13 @@
 * https://localhost:9090 Prometheus, usuario admin, senha @admin
 
 ### Instruções de uso
+Todos os endpoints estão bloqueados para uso anônimo (guest), então é necessário estar logado para que a aplicação funcione. Existe um endpoint somente para gerar o token, ele pode ser acessado da seguinte forma:
+>curl -X 'POST' \
+  'https://localhost:8080/api/v1/login' \
+  -H 'accept: application/json' \
+  -d ''
+
+
 Para lançar um crédito, chame o endpoint /api/cashflow utilizando o post com o seguinte body
 >{ "amount": 150, "transactionType": "Credit", "date": "2023-08-14T14:53:57.141Z" }
 

@@ -1,4 +1,5 @@
 ﻿using Application.Features.DailySummaries.Queries;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Presenters;
 
@@ -15,7 +16,7 @@ public class DailySummaryController : ApiControllerBase
     /// <returns>O resumo do dia pela data especificada</returns>
     [HttpGet("{date:datetime}")]
     [ProducesResponseType(typeof(DailySummaryResponse), StatusCodes.Status200OK)]
-    [ProducesResponseType(typeof(CustomProblemDetails), StatusCodes.Status404NotFound)]
+    [ProducesResponseType(typeof(CustomProblemDetails), StatusCodes.Status404NotFound)]    
     public async Task<IActionResult> GetByDate(DateTime date, CancellationToken cancellationToken)
     {
         DailySummaryResponse dailySummary = await Sender.Send(new GetDailySummaryByDateQuery(date), cancellationToken).ConfigureAwait(false);
