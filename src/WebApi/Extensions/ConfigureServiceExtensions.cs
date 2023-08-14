@@ -1,5 +1,6 @@
 ﻿using Application.Common;
 using Application.Common.Behaviors;
+using Application.Common.Exceptions;
 using Application.Common.Interfaces;
 using Application.Common.Services;
 using Application.Settings;
@@ -14,8 +15,6 @@ using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Formatters;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Diagnostics.CodeAnalysis;
@@ -107,6 +106,8 @@ public static class ConfigureServiceExtensions
             options.Rethrow<NotSupportedException>();
             options.MapToStatusCode<NotImplementedException>(StatusCodes.Status501NotImplemented);
             options.MapToStatusCode<HttpRequestException>(StatusCodes.Status503ServiceUnavailable);
+            options.MapToStatusCode<UnauthorizedException>(StatusCodes.Status401Unauthorized);
+            options.IncludeExceptionDetails = (ctx, ex) => true;
         })
         .AddProblemDetailsConventions();
     }

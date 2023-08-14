@@ -16,9 +16,11 @@ public class DailySummaryController : ApiControllerBase
     /// <returns>O resumo do dia pela data especificada</returns>
     [HttpGet("{date:datetime}")]
     [ProducesResponseType(typeof(DailySummaryResponse), StatusCodes.Status200OK)]
-    [ProducesResponseType(typeof(CustomProblemDetails), StatusCodes.Status404NotFound)]    
+    [ProducesResponseType(typeof(CustomProblemDetails), StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    [Authorize]
     public async Task<IActionResult> GetByDate(DateTime date, CancellationToken cancellationToken)
-    {
+    {        
         DailySummaryResponse dailySummary = await Sender.Send(new GetDailySummaryByDateQuery(date), cancellationToken).ConfigureAwait(false);
 
         return Ok(dailySummary);

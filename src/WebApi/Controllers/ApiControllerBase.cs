@@ -14,6 +14,7 @@ namespace WebApi.Controllers;
 [ProducesResponseType(typeof(CustomProblemDetails), StatusCodes.Status400BadRequest)]
 [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status429TooManyRequests)]
 [ProducesResponseType(typeof(CustomProblemDetails), StatusCodes.Status500InternalServerError)]
+[ProducesResponseType(typeof(CustomProblemDetails), StatusCodes.Status401Unauthorized)]
 [Produces("application/json")]
 [ExcludeFromCodeCoverage]
 public abstract class ApiControllerBase : ControllerBase

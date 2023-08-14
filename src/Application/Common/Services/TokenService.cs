@@ -10,7 +10,7 @@ public class TokenService
     public AuthenticationDto GenerateToken()
     {
         var tokenHandler = new JwtSecurityTokenHandler();
-        var key = Encoding.ASCII.GetBytes("inmetricsinmetrics_inmetrics");
+        var key = Encoding.ASCII.GetBytes("inmetrics_inmetrics_inmetrics");
         var tokenDescriptor = new SecurityTokenDescriptor
         {
             Subject = new ClaimsIdentity(new Claim[]
