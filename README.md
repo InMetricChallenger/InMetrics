@@ -44,7 +44,7 @@
 * <b>Grafana:</b> Exibindo de forma user friendly os dados capturados do Prometheus
 
 ## Diagrama da solução
-![Diagram](./docs/diagram/diagram.png)
+![Diagram](./docs/diagrams/diagram.png)
 
 ## Como rodar a aplicação: <a name="comorodar"></a>
 > docker compose up
