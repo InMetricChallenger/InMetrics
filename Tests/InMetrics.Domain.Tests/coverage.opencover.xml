@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession>
+  <Summary numSequencePoints="70" visitedSequencePoints="55" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="78.57" branchCoverage="100" maxCyclomaticComplexity="27" minCyclomaticComplexity="27" visitedClasses="4" numClasses="4" visitedMethods="24" numMethods="27" />
+  <Modules>
+    <Module hash="991DB1CC-24DD-4EDB-B3D3-3579D31C6148">
+      <ModulePath>Domain.dll</ModulePath>
+      <ModuleTime>2023-08-12T05:07:21</ModuleTime>
+      <ModuleName>Domain</ModuleName>
+      <Files>
+        <File uid="1" fullPath="D:\_dev\inmetrics\Solucao04\InMetrics\src\Domain\Events\CashFlowEvents\CashFlowCreatedEventNotification.cs" />
+        <File uid="2" fullPath="D:\_dev\inmetrics\Solucao04\InMetrics\src\Domain\Entities\CashFlow.cs" />
+        <File uid="3" fullPath="D:\_dev\inmetrics\Solucao04\InMetrics\src\Domain\Entities\DailySummary.cs" />
+        <File uid="4" fullPath="D:\_dev\inmetrics\Solucao04\InMetrics\src\Domain\Common\BaseEntity.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="13" visitedSequencePoints="13" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="6" numMethods="6" />
+          <FullName>Domain.Events.CashFlowEvents.CashFlowCreatedEventNotification</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Int32 Domain.Events.CashFlowEvents.CashFlowCreatedEventNotification::get_CashFlowId()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="9" ec="1" el="9" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Decimal Domain.Events.CashFlowEvents.CashFlowCreatedEventNotification::get_Amount()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="10" ordinal="0" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="10" ec="1" el="10" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>Domain.Enums.TransactionType Domain.Events.CashFlowEvents.CashFlowCreatedEventNotification::get_TransactionType()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="11" ec="1" el="11" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.DateTime Domain.Events.CashFlowEvents.CashFlowCreatedEventNotification::get_Date()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="12" ordinal="0" sl="12" sc="1" el="12" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="12" ec="1" el="12" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.DateTime Domain.Events.CashFlowEvents.CashFlowCreatedEventNotification::get_EventDateTime()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="14" ordinal="0" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="14" ec="1" el="14" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Domain.Events.CashFlowEvents.CashFlowCreatedEventNotification::.ctor(System.Int32,System.Decimal,Domain.Enums.TransactionType,System.DateTime,System.DateTime)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="16" ordinal="0" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="17" ordinal="1" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="18" ordinal="2" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="19" ordinal="3" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="20" ordinal="4" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="21" ordinal="5" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="22" ordinal="6" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="23" ordinal="7" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="8" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="16" ec="1" el="23" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="28" visitedSequencePoints="18" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="64.28" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="7" numMethods="9" />
+          <FullName>Domain.Entities.CashFlow</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Collections.Generic.IReadOnlyCollection`1&lt;MediatR.INotification&gt; Domain.Entities.CashFlow::get_DomainEvents()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="13" ec="1" el="13" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Decimal Domain.Entities.CashFlow::get_Amount()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="5" uspid="15" ordinal="0" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="15" ec="1" el="15" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>Domain.Enums.TransactionType Domain.Entities.CashFlow::get_TransactionType()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="5" uspid="17" ordinal="0" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="17" ec="1" el="17" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.DateTime Domain.Entities.CashFlow::get_Date()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="19" ordinal="0" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="19" ec="1" el="19" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Domain.Entities.CashFlow::AddCashFlowCreatedEvent()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="43" ordinal="0" sl="43" sc="1" el="43" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="51" ordinal="1" sl="51" sc="1" el="51" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="52" ordinal="2" sl="52" sc="1" el="52" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="43" ec="1" el="52" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Domain.Entities.CashFlow::Update(System.Decimal,Domain.Enums.TransactionType)</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="55" ordinal="0" sl="55" sc="1" el="55" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="56" ordinal="1" sl="56" sc="1" el="56" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="57" ordinal="2" sl="57" sc="1" el="57" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="1" uspid="58" ordinal="3" sl="58" sc="1" el="58" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="55" ec="1" el="58" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="7" visitedSequencePoints="7" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Domain.Entities.CashFlow::.ctor(System.Decimal,Domain.Enums.TransactionType,System.DateTime)</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="2" uspid="22" ordinal="1" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="2" uspid="23" ordinal="2" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="2" uspid="24" ordinal="3" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="2" uspid="25" ordinal="4" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="2" uspid="26" ordinal="5" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="2" uspid="27" ordinal="6" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="7" uspid="0" p8:type="SequencePoint" ordinal="6" offset="6" sc="0" sl="11" ec="1" el="27" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="7" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Domain.Entities.CashFlow::.ctor(System.Int32,System.Decimal,Domain.Enums.TransactionType,System.DateTime)</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="30" ordinal="0" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="31" ordinal="1" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="32" ordinal="2" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="33" ordinal="3" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="34" ordinal="4" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="35" ordinal="5" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="36" ordinal="6" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="7" offset="7" sc="0" sl="30" ec="1" el="36" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Domain.Entities.CashFlow::.ctor()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="38" ordinal="0" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="39" ordinal="1" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="40" ordinal="2" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="8" offset="8" sc="0" sl="38" ec="1" el="40" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="24" visitedSequencePoints="19" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="79.16" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="8" numMethods="9" />
+          <FullName>Domain.Entities.DailySummary</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.DateTime Domain.Entities.DailySummary::get_Date()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="6" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="9" ec="1" el="9" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Decimal Domain.Entities.DailySummary::get_TotalCredit()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="12" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="11" ec="1" el="11" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Decimal Domain.Entities.DailySummary::get_TotalDebit()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="12" uspid="13" ordinal="0" sl="13" sc="1" el="13" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="13" ec="1" el="13" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Decimal Domain.Entities.DailySummary::get_NetAmount()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="15" ordinal="0" sl="15" sc="1" el="15" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="15" ec="1" el="15" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Domain.Entities.DailySummary::AddCredit(System.Decimal)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="29" ordinal="0" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="2" uspid="30" ordinal="1" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="2" uspid="31" ordinal="2" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="29" ec="1" el="31" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Domain.Entities.DailySummary::AddDebit(System.Decimal)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="34" ordinal="0" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="2" uspid="35" ordinal="1" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="2" uspid="36" ordinal="2" sl="36" sc="1" el="36" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="34" ec="1" el="36" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Domain.Entities.DailySummary::.ctor()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="17" ordinal="0" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="1" uspid="18" ordinal="1" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="1" uspid="20" ordinal="2" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="6" offset="6" sc="0" sl="17" ec="1" el="20" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Domain.Entities.DailySummary::.ctor(System.Int32,System.DateTime)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="22" ordinal="0" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="23" ordinal="1" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="24" ordinal="2" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="25" ordinal="3" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="0" uspid="26" ordinal="4" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="7" offset="7" sc="0" sl="22" ec="1" el="26" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Domain.Entities.DailySummary::.ctor(System.DateTime)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="4" uspid="38" ordinal="0" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="4" uspid="39" ordinal="1" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="4" uspid="40" ordinal="2" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="4" uspid="41" ordinal="3" sl="41" sc="1" el="41" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="4" uspid="42" ordinal="4" sl="42" sc="1" el="42" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="4" uspid="43" ordinal="5" sl="43" sc="1" el="43" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="6" uspid="0" p8:type="SequencePoint" ordinal="8" offset="8" sc="0" sl="38" ec="1" el="43" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="3" numMethods="3" />
+          <FullName>Domain.Common.BaseEntity</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Int32 Domain.Common.BaseEntity::get_Id()</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="14" ordinal="0" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="14" ec="1" el="14" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Domain.Common.BaseEntity::.ctor(System.Int32)</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="7" ordinal="0" sl="7" sc="1" el="7" ec="2" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="7" ec="1" el="7" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void Domain.Common.BaseEntity::.ctor()</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="8" uspid="9" ordinal="0" sl="9" sc="1" el="9" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="8" uspid="10" ordinal="1" sl="10" sc="1" el="10" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="8" uspid="11" ordinal="2" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="3" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="9" ec="1" el="11" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+  </Modules>
+</CoverageSession>

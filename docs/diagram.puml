@@ -1,0 +1,72 @@
+@startuml
+
+' Styling
+skinparam package {
+    BorderColor black
+    BackgroundColor #F5F5F5
+    FontSize 16
+    stereotypeFontColor white
+    FontColor black
+}
+
+skinparam class {
+    BorderColor black
+    BackgroundColor white
+    FontSize 14
+}
+
+skinparam arrow {
+    FontSize 14
+    Color black
+}
+
+' Define the boundary
+package "InMetrics System" {
+    ' Layers
+    package "WebApi" <<Web>> {
+        [Web API]
+    }
+    package "Application" <<Application>> {
+        [Application Services]
+        package "Event Handlers" <<Handlers>> {
+            [CashFlowCreatedNotificationHandler]
+            [CreditTransactionCreatedNotificationHandler]
+            [DebitTransactionCreatedNotificationHandler]
+        }
+    }
+    package "Domain" <<Domain>> {
+        [DailySummary]
+        [CashFlow]
+        [CashFlowCreatedEventNotification]        
+    }
+    package "Infrastructure" <<Infrastructure>> {
+        [Infrastructure Services]
+        
+        package "Command DB Context" <<DBContext>> {
+            [AppCommandDbContext]
+            database "Command Database" {
+                [CashFlow Table]
+                [DailySummary Table]
+            }
+        }
+        
+        package "Query DB Context" <<DBContext>> {
+            [AppQueryDbContext]
+            database "Query Database" {
+                [CashFlowQuery Table]
+                [DailySummaryQuery Table]
+            }
+        }
+    }
+
+    ' Relations
+    [Web API] --> [Application Services]
+    [Application Services] --> [DailySummary]
+    [Application Services] --> [CashFlow]
+    [Application Services] --> [Infrastructure Services]
+    [CashFlow] ..> [CashFlowCreatedEventNotification] : triggers
+    [CashFlowCreatedEventNotification] --> [CashFlowCreatedNotificationHandler] : listened by
+    [CashFlowCreatedEventNotification] --> [CreditTransactionCreatedNotificationHandler] : listened by
+    [CashFlowCreatedEventNotification] --> [DebitTransactionCreatedNotificationHandler] : listened by    
+}   
+@enduml

@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>2dfc5bac-e0a1-4dd3-a3f2-d935fdcb54f9</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AspNetCoreRateLimit" Version="5.0.0" />
+        <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+        <PackageReference Include="Hellang.Middleware.ProblemDetails" Version="6.5.1" />
+        <PackageReference Include="MediatR" Version="12.0.1" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.12" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.6" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="6.0.0" />
+        <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
+        <PackageReference Include="prometheus-net.AspNetCore" Version="8.0.1" />
+        <PackageReference Include="Serilog.AspNetCore" Version="6.1.0" />
+        <PackageReference Include="Serilog.Exceptions" Version="8.4.0" />
+        <PackageReference Include="Serilog.Extensions.Logging" Version="3.1.0" />
+        <PackageReference Include="Serilog.Formatting.Elasticsearch" Version="9.0.0" />
+        <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>
