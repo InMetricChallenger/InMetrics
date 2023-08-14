@@ -5,7 +5,7 @@ on:
 
 jobs:
   diagrams-generation:
-    runs-on: self-hosted
+    runs-on: windows-latest
 
     steps:
       - name: Checkout repository
