@@ -34,8 +34,8 @@ public static class ConfigureWebApplicationExtensions
 
         #endregion
 
-        app.UseProblemDetails();
 
+        app.UseProblemDetails();
         app.UseSwagger();
         app.UseSwaggerUI(options =>
         {
@@ -49,13 +49,13 @@ public static class ConfigureWebApplicationExtensions
         app.UseSerilogRequestLogging();
 
         app.UseRouting();
+        app.UseMiddleware<UnauthorizedResponseMiddleware>();
         app.UseMiddleware<RateLimitResponseMiddleware>();
         app.UseIpRateLimiting();
-
         app.UseCors(CorsPoliceName);
         app.UseMetricServer();
         app.UseAuthentication();
-        app.UseAuthorization();
+        app.UseAuthorization();        
         app.UseHealthChecks("/health");
         app.UseEndpoints(endpoints =>
         {

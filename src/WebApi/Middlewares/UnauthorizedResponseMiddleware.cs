@@ -1,21 +1,16 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.DependencyInjection;
-using System;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics.CodeAnalysis;
-using System.IO;
-using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
+using System.Text;
 
 namespace WebApi.Middlewares;
 
 [ExcludeFromCodeCoverage]
-public class RateLimitResponseMiddleware
+public class UnauthorizedResponseMiddleware
 {
     private readonly RequestDelegate _next;
 
-    public RateLimitResponseMiddleware(RequestDelegate next)
+    public UnauthorizedResponseMiddleware(RequestDelegate next)
     {
         _next = next;
     }
@@ -33,7 +28,7 @@ public class RateLimitResponseMiddleware
         }
         finally
         {
-            if (context.Response.StatusCode == StatusCodes.Status429TooManyRequests)
+            if (context.Response.StatusCode == StatusCodes.Status401Unauthorized)
             {
                 responseBody.SetLength(0);
                 context.Response.ContentType = "application/problem+json";
@@ -41,8 +36,8 @@ public class RateLimitResponseMiddleware
                 var problemDetails = new ProblemDetails
                 {
                     Status = StatusCodes.Status429TooManyRequests,
-                    Title = "Muitas requisições.",
-                    Detail = "Excedido o limite de requisições, tente novamente mais tarde."
+                    Title = "Acesso não autorizado",
+                    Detail = "Acesso a aplicação não autorizada"
                 };
 
                 JsonSerializerOptions jsonOptions = context.RequestServices.GetService<JsonSerializerOptions>() ?? new JsonSerializerOptions();
@@ -51,9 +46,9 @@ public class RateLimitResponseMiddleware
 
                 context.Response.ContentLength = jsonData.Length;
                 await responseBody.WriteAsync(jsonData.AsMemory(0, jsonData.Length)).ConfigureAwait(false);
-                responseBody.Seek(0, SeekOrigin.Begin);                
+                responseBody.Seek(0, SeekOrigin.Begin);
+                
             }
-
             responseBody.Seek(0, SeekOrigin.Begin);
             await responseBody.CopyToAsync(originalBodyStream).ConfigureAwait(false);
         }

@@ -24,8 +24,8 @@ public class CashFlowController : ApiControllerBase
     /// <returns>O cliente com o ID especificado.</returns>
     [HttpGet("{cashFlowId:int}")]
     [ProducesResponseType(typeof(CashFlowResponse), StatusCodes.Status200OK)]
-    [ProducesResponseType(typeof(CustomProblemDetails), StatusCodes.Status404NotFound)]
-    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(typeof(CustomProblemDetails), StatusCodes.Status404NotFound)]    
+    [ProducesResponseType(typeof(CustomProblemDetails), StatusCodes.Status401Unauthorized)]
     [Authorize]
     public async Task<IActionResult> GetById(int cashFlowId, CancellationToken cancellationToken)
     {        
@@ -43,7 +43,7 @@ public class CashFlowController : ApiControllerBase
     [HttpPost]
     [ProducesResponseType(typeof(Result<int>), StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(CustomProblemDetails), StatusCodes.Status422UnprocessableEntity)]
-    [ProducesResponseType(StatusCodes.Status401Unauthorized)]    
+    [ProducesResponseType(typeof(CustomProblemDetails), StatusCodes.Status401Unauthorized)]    
     [Authorize]
     public async Task<IActionResult> Create([FromBody] CreateCashFlowCommand command, CancellationToken cancellationToken)
     {        

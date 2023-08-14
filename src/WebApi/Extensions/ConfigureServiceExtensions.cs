@@ -19,6 +19,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
+using System.Security.Authentication;
 using System.Text;
 using System.Text.Json.Serialization;
 using WebApi.Filters;
@@ -39,6 +40,7 @@ public static class ConfigureServiceExtensions
         services.ConfigureLogginBehavior(configuration);
         services.ConfigurePollyPolicies(configuration);
         services.ConfigureCustomServiceProvider();
+        services.ConfigureAuthentication();
         services.ConfigureCors();
         services.ConfigureControllers();
         services.ConfigureFluentValidation();
@@ -49,7 +51,7 @@ public static class ConfigureServiceExtensions
         services.ConfigureApiVersioning();
         services.ConfigureSwagger();
         services.ConfigureRateLimiting(configuration);
-        services.ConfigureAuthentication();
+        
         services.ConfigureHealthChecksAndRouting();        
         
         return services;
@@ -105,8 +107,10 @@ public static class ConfigureServiceExtensions
         {
             options.Rethrow<NotSupportedException>();
             options.MapToStatusCode<NotImplementedException>(StatusCodes.Status501NotImplemented);
-            options.MapToStatusCode<HttpRequestException>(StatusCodes.Status503ServiceUnavailable);
+            options.MapToStatusCode<HttpRequestException>(StatusCodes.Status503ServiceUnavailable);            
+            options.MapToStatusCode<AuthenticationException>(StatusCodes.Status401Unauthorized);
             options.MapToStatusCode<UnauthorizedException>(StatusCodes.Status401Unauthorized);
+
             options.IncludeExceptionDetails = (ctx, ex) => true;
         })
         .AddProblemDetailsConventions();
